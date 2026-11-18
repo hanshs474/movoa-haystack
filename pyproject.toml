@@ -1,0 +1,28 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "movoa-haystack"
+version = "0.1.0"
+description = "Unlimited AI video generator with sound: on paid plans the tenth take of a shot costs what the first did, and your first clip is free to make right now. Haystack component for Movoa (movoa.ai): text to video and photo to video with sound in a pipeline."
+readme = "README.md"
+requires-python = ">=3.9"
+license = "MIT"
+authors = [{ name = "Movoa (https://movoa.ai)" }]
+keywords = ["haystack", "ai", "video-generation", "text-to-video", "image-to-video", "minimax-h3", "seedance-2-5", "veo-3", "pipeline", "movoa"]
+classifiers = [
+  "Programming Language :: Python :: 3",
+  "Topic :: Multimedia :: Video",
+]
+dependencies = ["haystack-ai>=2.0", "movoa>=0.1.0"]
+
+[project.urls]
+Homepage = "https://movoa.ai/?utm_source=pypi-haystack&utm_medium=package"
+"Text to video" = "https://movoa.ai/video/text-to-video"
+"API keys" = "https://movoa.ai/settings/apikeys"
+Pricing = "https://movoa.ai/pricing"
+Source = "https://github.com/hanshs474/movoa-haystack"
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/movoa_haystack"]
